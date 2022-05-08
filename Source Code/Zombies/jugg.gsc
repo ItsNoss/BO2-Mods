@@ -61,7 +61,6 @@ doGivePerk(perk)
             self thread maps/mp/zombies/_zm_perks::wait_give_perk(perk, 1);
         self maps/mp/zombies/_zm_perks::perk_give_bottle_end(gun, perk);
         if (self maps/mp/zombies/_zm_laststand::player_is_in_laststand() || isDefined(self.intermission))
-            self iprintln("Bitchless");
             return;
         self notify("burp");
     }
